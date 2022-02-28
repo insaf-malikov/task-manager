@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Project</title>
+</head>
+<body>
+<h1>Project adding</h1>
+<form method="post" action="/projects/add">
+    <label>Name
+        <input name="name" placeholder="add Name">
+    </label>
+    <label>Status
+        <select name="status">
+            <option>NotStarted</option>
+            <option>Active</option>
+            <option>Completed</option>
+        </select>
+    </label>
+    <label>Priority
+    <input name="priority" placeholder="add priority">
+</label>
+    <label> Start Date
+        <input name="startDate" placeholder="add Start Date YYYY-MM-dd">
+    </label>
+    <label> Complete Date
+        <input name="completeDate" placeholder="add Complete Date YYYY-MM-dd">
+    </label>
+    <input type="submit" value="Add">
+</form>
+</body>
+</html>
